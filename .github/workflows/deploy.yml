@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    tags:
+      - "[0-9].[0-9].[0-9]"
 
 jobs:
   build_and_push:
@@ -31,4 +33,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
-            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:0.0.1
+            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:{{ github.event.release.tag_name }}
