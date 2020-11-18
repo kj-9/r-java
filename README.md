@@ -1,17 +1,16 @@
 # Docker image of R with Java
 
-A base image is [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse) which includes R 4.0.2, tidyverse, and Rstudio server.
+A base image is [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse) which includes R, tidyverse, and Rstudio server.
 
 This images adds R packages below.
 - rJava
 - tabulizer
 - log4r
 
+# Usage
 
-# usage
-
-## Example of usage with Rstudio server
-```bash
+## Example of running Rstudio server
+```sh
 docker run \
     --workdir /home/rstudio \
     -v $(pwd):/home/rstudio \
@@ -20,8 +19,11 @@ docker run \
     ghcr.io/kj002/r-java:latest
 ```
 then access ```localhost:8787``` with your browser.
+\*default user name is ```rstudio```.
+
 
 ## Example of running R script
+```sh
 docker run \
     -it \
     --rm \
@@ -29,3 +31,4 @@ docker run \
     --workdir /home/rstudio \
     -v $(pwd):/home/rstudio \
     ghcr.io/kj002/r-java:latest YOURSCRIPT.R
+```
