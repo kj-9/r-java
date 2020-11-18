@@ -1,4 +1,4 @@
-FROM rocker/tidyverse:4.0.2
+FROM rocker/tidyverse:${R_VERSION}
 
 # Install java, rJava and other R packages
 RUN apt-get -y update && apt-get install -y \
