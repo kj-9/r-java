@@ -1,3 +1,5 @@
+ARG R_VERSION=${R_VERSION}
+
 FROM rocker/tidyverse:${R_VERSION}
 
 # Install java, rJava and other R packages
