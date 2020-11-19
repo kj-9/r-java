@@ -12,4 +12,5 @@ RUN apt-get -y update && apt-get install -y \
     --deps TRUE \
     rJava \
     tabulizer \
-    log4r
+    log4r \
+    modules
