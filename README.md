@@ -6,13 +6,14 @@ This images adds R packages below.
 - rJava
 - tabulizer
 - log4r
+- modules
 
 ## tags
 
-tag indicates R version.
-e.g. ```ghcr.io/kj002/r-java:4.0.3``` has R version ```4.0.3```.
+Tags indicates R version.
+For example, ```ghcr.io/kj002/r-java:4.0.3``` has R version ```4.0.3```.
 
-Currently, only some R versions are available. see [here](https://github.com/users/kj002/packages/container/r-java/versions) to check available tags.
+Currently, only some R versions are available. See [here](https://github.com/users/kj002/packages/container/r-java/versions) to check out available tags(R versions).
 
 # Usage
 
