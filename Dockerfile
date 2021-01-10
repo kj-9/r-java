@@ -19,7 +19,7 @@ RUN mkdir -p $HOME/.R/ \
    rstan \
    # install R packages
    rJava \
-   tabulizer    \
+   tabulizer \
    log4r \
    modules \
    pointblank \
